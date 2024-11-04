@@ -1,0 +1,49 @@
+&CONTROL
+  calculation	= "scf",
+  title		= "benzotriazole_scf",
+  pseudo_dir 	= "/pseudo",
+  outdir	= "/benzotriazole",
+  verbosity	= "high",
+  restart_mode	= "from_scratch",
+  prefix	= "scf",
+  disk_io 	= "nowf",
+/
+&SYSTEM
+  ibrav		= 1,
+  nat		= 14,
+  ntyp		= 3,
+  nbnd		= 36,
+  celldm(1)	= 40.D0,
+  ecutwfc	= 90.D0,
+  ecutrho	= 720.D0,
+  occupations	= "smearing",
+  smearing	= "methfessel-paxton",
+  degauss	= 0.05D0,
+/
+&ELECTRONS
+  conv_thr	= 1.D-6,
+  mixing_beta	= 0.7D0,
+/
+&IONS
+/
+ATOMIC_SPECIES
+C  12.011  C.pbe-n-kjpaw_psl.1.0.0.UPF
+N  14.007  N.pbe-n-radius_5.UPF
+H   1.008  H.pbe-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS {angstrom}
+N    3.721429    6.438911    8.709724
+N    2.987385    5.590037    7.933059
+N    2.306691    4.802797    8.708667
+C    3.511906    6.197750   12.405586
+C    2.586454    5.126950   12.405411
+C    2.112233    4.577943   11.223167
+C    2.587243    5.127263   10.022296
+C    3.512400    6.197307   10.035760
+C    3.994763    6.755758   11.227891
+H    4.317568    7.128428    8.260034
+H    3.854308    6.594483   13.363461
+H    2.242443    4.729111   13.362597
+H    1.398789    3.752405   11.213562
+H    4.708628    7.581582   11.235786
+K_POINTS {gamma}
+
