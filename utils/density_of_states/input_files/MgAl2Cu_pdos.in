@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix = "scf_pdos",
+  outdir = "/MgAl2Cu_2x1_C6H5N3_final",
+  filpdos = "MgAl2Cu_pdos.dat"
+/

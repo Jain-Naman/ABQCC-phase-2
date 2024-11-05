@@ -1,0 +1,4 @@
+wstat_control:
+ wstat_calculation: S
+ n_pdep_eigen: 64
+ trev_pdep: 0.001
