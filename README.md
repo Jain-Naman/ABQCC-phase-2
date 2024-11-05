@@ -26,13 +26,14 @@ Based on the strongly localized occupied and virtual orbitals from Step 1, quant
 Using the embedded models, we apply a variational quantum eigensolver (VQE) to compute ground state energies. Relevant notebooks are in the `vqe` directory under `embedding`. Although the code indicates simulator-based experiments, tests have also been run on hardware in hosted notebooks.
 
 # Repository Structure
-- adsorption/: Contains scripts and data related to adsorption process simulations
-- benzotriazole/: Files and data specific to benzotriazole molecule calculations
-- embedding/: Directory for quantum embedding models and related code
-    - /qdet
-        Contains WEST calculations, including wstat convergence tests and wfreq frequency calculations.
-    - /vqe Code for variational quantum eigensolver (VQE) calculations using embedded models.
-- utils/: Utility functions for various analysis tasks
-    - /density_of_states -Scripts to calculate and analyze density of states (DOS)
-    - /localization - Functions to compute localization indexes
+- `/QE` : Contains Quantum Espresso scripts
+    - `/adsorption`: Contains scripts and data related to adsorption process simulations
+    - `/benzotriazole`: Files and data specific to benzotriazole molecule calculations
+    - `/free_surface` : Files and data for the free metal surface. 
+- `/embedding`: Directory for quantum embedding models and related code
+    - `/qdet` : Contains WEST calculations, including wstat convergence tests and wfreq frequency calculations.
+    - `/vqe` : Code for variational quantum eigensolver (VQE) calculations using embedded models.
+- `/utils` : Utility functions for various analysis tasks
+    - `/density_of_states`: -Scripts to calculate and analyze density of states (DOS)
+    - `/localization`: - Functions to compute localization indexes
 - requirements.txt: Lists required Python packages and versions
